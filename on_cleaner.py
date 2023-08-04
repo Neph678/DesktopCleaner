@@ -11,10 +11,10 @@ audio_extensions = [".mp3", ".wav"]
 
 username = getlogin()
 
-source_dir = "/Users/"+username+"/Desktop"
-img_dir = "/Users/"+username+"/Pictures"
-video_dir = "/Users/"+username+"/Videos"
-audio_dir = "/Users/"+username+"/Music"
+source_dir = f"/Users/{username}/Desktop"
+img_dir = f"/Users/{username}/Pictures"
+video_dir = f"/Users/{username}/Videos"
+audio_dir = f"/Users/{username}/Music"
 
 
 def make_unique(dest, name):
