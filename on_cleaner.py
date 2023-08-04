@@ -49,6 +49,7 @@ def check_image_files(file):
 def check_video_files(file):
     for extension in video_extensions:
         if file.name.endswith(".webm"):
+            # moving webm extensions to their own folder
             move_file(video_dir + "/Webm", file)
         elif file.name.endswith(extension):
             move_file(video_dir, file)
@@ -69,7 +70,6 @@ def clean_directory(target_dir):
 
 
 if __name__ == "__main__":
-    # Logger shit
     logger = logging.getLogger("my_logger")
     logger.setLevel(logging.INFO)
     console_handler = logging.StreamHandler()
